@@ -5,7 +5,7 @@ const searchBook = () => {
     searchField.value = '';
     const clearReaults = document.getElementById('search-quantity');
     clearReaults.textContent = '';
-    const url = `http://openlibrary.org/search.json?q=${searchText}`;
+    const url = `https://openlibrary.org/search.json?q=${searchText}`;
     fetch(url)
         .then(res => res.json())
         .then(data => displayBookInfo(data.docs));
