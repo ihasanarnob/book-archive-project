@@ -15,7 +15,6 @@ const searchBook = () => {
 const displayBookInfo = infos => {
     const divContainer = document.getElementById('book-info');
     divContainer.textContent = '';
-    // console.log(infos);
     // not found Eorror
     if (infos.length === 0) {
         const bookNotFound = document.getElementById('book-not-found');
